@@ -25,9 +25,10 @@ cd client
 npm run dev
 ```
 
-2. Navigate to backend directory
+2. Navigate to the backend directory
 
 ```bash
 cd backend
 npm start
 ```
+By default, the development server runs on `http://localhost:5173`. Open your web browser and navigate to this URL to access the application.
