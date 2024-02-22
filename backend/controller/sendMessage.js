@@ -2,16 +2,25 @@
 const OpenAI = require("openai");
 
 const sendMessage = async (req, res) => {
+
+  // ------ uncomment below 4 lines to see if you're getting credentials or not---------------
+
+  // console.log(process.env.API_KEY);
+  // console.log(process.env.ORGANIZATION);
+  // console.log(process.env.MODEL);
+  // console.log(process.env.OPENAPI_ENDPOINT);
+
+
   const openai = new OpenAI({
     // replace your-api-key with your API key from ChatGPT
-    apiKey: "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",
-    organization: "org-Nt8UJ5Ods1YabcmEZ34mmLQb"
+    apiKey: process.env.API_KEY,
+    organization: process.env.ORGANIZATION,
   });
 
   try {
     const completion = await openai.chat.completions.create({
       messages: [{ role: "system", content: "You are a helpful assistant." }],
-      model: "gpt-3.5-turbo",
+      model: process.env.MODEL,
     });
 
     console.log(completion.choices[0]);

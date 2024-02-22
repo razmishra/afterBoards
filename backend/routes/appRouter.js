@@ -20,11 +20,11 @@ appRouter.get("/submit", sendMessage);
 //   };
 
 //   try {
-//     const response = await fetch("https://api.openai.com/v1/chat/completions", {
+//     const response = await fetch(process.env.OPENAPI_ENDPOINT, {
 //       method: "POST",
 //       headers: {
 //         "Content-type": "application/json",
-//         "Authorization": "Bearer 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",
+//         "Authorization": `Bearer {process.env.API_KEY}`,
 //       },
 //       body: data,
 //     });
