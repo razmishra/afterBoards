@@ -6,11 +6,13 @@
  https://github.com/razmishra/afterBoards.git
 ```
 2. Install the project dependencies using
-   ```bash
-   npm install
-   or
-   yarn install
-   ```
+```bash
+  npm install
+```
+or
+```bash
+  yarn install
+```
 
 ### Running the Development server
 
