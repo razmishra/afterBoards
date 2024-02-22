@@ -1,0 +1,96 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.floating-button {
+  position: absolute;
+  z-index: 9999;
+  background-color: #f7f7f7;
+  color: #717171;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.floating-button:hover {
+  background-color: #dbd8d8;
+}
+
+.text-container {
+  display: flex;
+}
+
+.list-container {
+  border: 1px solid #ccc;
+  border-left: none;
+  border-right: none;
+}
+
+.list-container > p {
+  padding-left: 10px;
+  color: #5f5d5d;
+  font-size: large;
+}
+
+.comprehension-btn > button {
+  border: none;
+  outline: none;
+  background-color: #f8f8f8;
+  border-radius: 33px;
+  padding: 0.51rem;
+  font-size: larger;
+}
+
+.comprehension-btn {
+  align-self: flex-end;
+  padding: 1rem;
+}
+
+.comprehension-btn > button:hover {
+  cursor: pointer;
+  background-color: #b1aaaa86;
+}
+
+.hr-line {
+  border: "none";
+  border-top: "1px solid #ccc";
+  margin: "10px 0";
+  opacity: 0.4;
+}
+/* 
+.input-container{
+  padding: 20px;
+} */
+.input-container > .input-field {
+  /* background-color: red; */
+  padding: 20px;
+  border: none;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  margin-bottom: 10px;
+}
+
+.next-btn {
+  border: none;
+  outline: none;
+  background-color: #f8f8f8;
+  border-radius: 33px;
+  padding: 0.51rem 1rem;
+  font-size: medium;
+  cursor: pointer;
+}
+
+/* .submit-btn {
+  border: none;
+  outline: none;
+  background-color: #0cc078;
+  border-radius: 33px;
+  padding: 0.51rem 1rem;
+  font-size: medium;
+  color: white;
+  cursor: pointer;
+} */
